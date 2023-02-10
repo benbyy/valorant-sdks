@@ -1,0 +1,37 @@
+// WidgetBlueprintGeneratedClass Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C
+// Size: 0x378 (Inherited: 0x2d8)
+struct UWidget_InWorldUsable_Pickup_C : UCoordinatedHUDElement {
+	struct FPointerToUberGraphFrame UberGraphFrame; // 0x2d8(0x08)
+	struct UImage* BlackBG; // 0x2e0(0x08)
+	struct UGamepadInputPromptSwitcher_C* GamepadInputPromptSwitcher; // 0x2e8(0x08)
+	struct UBorder* GamepadPromptBorder; // 0x2f0(0x08)
+	struct UKeyboardKeyBTN_C* KeyboardKeyBTN; // 0x2f8(0x08)
+	struct UTextBlock* TextBlock_1; // 0x300(0x08)
+	struct UTextBlock* TextBlock_2; // 0x308(0x08)
+	struct UTextBlock* TextBlock_3; // 0x310(0x08)
+	struct UTextBlock* TextBlock_SkinName; // 0x318(0x08)
+	struct FMulticastInlineDelegate NewEventDispatcher_1; // 0x320(0x10)
+	struct FString Owner; // 0x330(0x10)
+	struct FString Equippable; // 0x340(0x10)
+	struct AEquippableGroundPickup_C* GroundEquippable; // 0x350(0x08)
+	struct TArray<struct UAresOutlineComponent*> OutlinedPrimitiveComponents; // 0x358(0x10)
+	struct UWidgetComponent* WidgetComponent; // 0x368(0x08)
+	struct UGamepadInputIconBase* GamepadKeyBTN; // 0x370(0x08)
+
+	void AssignGamepadGlyphs(); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.AssignGamepadGlyphs // (Public|HasDefaults|BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void UpdateRotation(); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.UpdateRotation // (Public|HasDefaults|BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void UpdateVisiblity(); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.UpdateVisiblity // (Public|HasDefaults|BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void OnLoaded_94362B1844C5A0BBE5A85D80236AEFCE(struct UObject* Loaded); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.OnLoaded_94362B1844C5A0BBE5A85D80236AEFCE // (BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void UpdateUsability(bool NewUsability); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.UpdateUsability // (Public|BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void UpdateInUse(bool NewInUse); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.UpdateInUse // (Public|BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void Tick(struct FGeometry MyGeometry, float InDeltaTime); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.Tick // (BlueprintCosmetic|Event|Public|BlueprintEvent) // @ game+0x33d1d60
+	void SetUsableComponent(struct UUsableComponent* InUsableComponent, struct UWidgetComponent* InWidgetComponent, bool CurrentlyUsable, bool CurrentlyInUse, bool ShowUsableTime, bool ShowThirds, struct USceneComponent* PivotComponent, bool ShowProgressBar, bool ShowOwnerName, bool ShowCannotUseText); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.SetUsableComponent // (Public|BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void Construct(); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.Construct // (BlueprintCosmetic|Event|Public|BlueprintEvent) // @ game+0x33d1d60
+	void CinematicModeUpdated(); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.CinematicModeUpdated // (BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void OnInitialized(); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.OnInitialized // (BlueprintCosmetic|Event|Public|BlueprintEvent) // @ game+0x33d1d60
+	void PreConstruct(bool IsDesignTime); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.PreConstruct // (BlueprintCosmetic|Event|Public|BlueprintEvent) // @ game+0x33d1d60
+	void OnSettingUpdated(struct FName& Setting); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.OnSettingUpdated // (HasOutParms|BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+	void ExecuteUbergraph_Widget_InWorldUsable_Pickup(int32_t EntryPoint); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.ExecuteUbergraph_Widget_InWorldUsable_Pickup // (Final|UbergraphFunction|HasDefaults) // @ game+0x33d1d60
+	void NewEventDispatcher_0__DelegateSignature(); // Function Widget_InWorldUsable_Pickup.Widget_InWorldUsable_Pickup_C.NewEventDispatcher_0__DelegateSignature // (Public|Delegate|BlueprintCallable|BlueprintEvent) // @ game+0x33d1d60
+};
+
