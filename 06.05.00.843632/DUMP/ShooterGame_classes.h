@@ -3153,7 +3153,7 @@ struct AProjectile : AActor {
 	char pad_486[0x2]; // 0x486(0x02)
 	float DestroyDelay; // 0x488(0x04)
 	char pad_48C[0xc]; // 0x48c(0x0c)
-	struct USceneComponent* CollisionComponent; // 0x498(0x08)
+	struct USceneComponent* CollisionComponent; // 0x498(0x08) ??
 	int32_t CreationRandomSeed; // 0x4a0(0x04)
 	enum class EProjectilePerspective Perspective; // 0x4a4(0x01)
 	char pad_4A5[0xb]; // 0x4a5(0x0b)
